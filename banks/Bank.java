@@ -63,18 +63,15 @@ public class Bank {
 	}
 	
 	public static void displayBanks() {
-		
-		for(int index = 0; index < bankNames.length; index++) {
-			System.out.println((index + 1) + ".) " + bankNames[index]);
+		// we showing options to the user from 1 to *
+		// but within the array it has start from 0 to *
+		for(int index = 1; index < bankNames.length; index++) {
+			System.out.println(index + ".) " + bankNames[index-1]);
 		}
 	}
 
 	public String getOwnerName() {
 		return ownerName;
-	}
-
-	public void setOwnerName(String ownerName) {
-		this.ownerName = ownerName;
 	}
 
 	public String getAccountNumber() {
