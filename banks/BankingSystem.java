@@ -7,7 +7,7 @@ public class BankingSystem {
 	
 	private static final Map<String, Bank> bankAccounts = new HashMap<>();
 
-	public static void createAccount(String bankName, String ownerName, double balance, double limit) {
+	public static void createAccount(String bankName, String ownerName, double balance) {
 		Bank bankAccount = new Bank(bankName, ownerName, balance);
 		String accountNumber = bankAccount.getAccountNumber();
 		

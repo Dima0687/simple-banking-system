@@ -41,7 +41,6 @@ public class Application{
 						bankChoice = scan.nextInt();
 						bankName = Bank.getBankName(bankChoice);
 					} while(bankName == null);
-					double bankLimit = Bank.getBankLimit(bankName);
 		
 					do {
 
@@ -62,7 +61,7 @@ public class Application{
 						initialBalance = scan.nextDouble();
 					} while (initialBalance < 0);
 					
-					BankingSystem.createAccount(bankName, ownerName, initialBalance, bankLimit);
+					BankingSystem.createAccount(bankName, ownerName, initialBalance);
 				}
 				
 				case 2 -> {
