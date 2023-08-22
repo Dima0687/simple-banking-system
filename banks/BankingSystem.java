@@ -27,13 +27,13 @@ public class BankingSystem {
 	
 		if(bankAccounts.containsKey(accountNumber)) {
 			Bank bankAccount = bankAccounts.get(accountNumber);
+			int deposit = 1;
+			int liftOff = 2;
 			
-			// deposit
-			if(typeOfTransaction == 1) {
+			if(typeOfTransaction == deposit) {
 				bankAccount.deposit(amount);
 			}
-			// lift off
-			else if(typeOfTransaction == 2) {
+			else if(typeOfTransaction == liftOff) {
 				bankAccount.liftOff(amount);
 			}
 			else {
