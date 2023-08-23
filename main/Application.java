@@ -74,7 +74,7 @@ public class Application{
 					System.out.print("Enter your Account number: ");
 					accountNumber = scan.next(); // same problem with nextLine here
 					System.out.println("\n1.) Deposit");
-					System.out.println("2.) Lift off");
+					System.out.println("2.) Withdraw");
 					int transactionChoice = scan.nextInt();
 					System.out.print("Enter amount: ");
 					double amount = scan.nextDouble();
