@@ -49,7 +49,7 @@ public class BankingSystem {
 		if(bankAccounts.containsKey(accountNumber)) {
 			Bank bankAccount = bankAccounts.get(accountNumber);
 			
-			System.out.println("Name of the bank: " + bankAccount.getBankName());
+			System.out.println("\nName of the bank: " + bankAccount.getBankName());
 			System.out.println("Account number: " + bankAccount.getAccountNumber());
 			System.out.println("Account owner: " + bankAccount.getOwnerName());
 			System.out.println("Account limit: " + bankAccount.getBankLimit());
