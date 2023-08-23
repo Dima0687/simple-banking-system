@@ -28,13 +28,13 @@ public class BankingSystem {
 		if(bankAccounts.containsKey(accountNumber)) {
 			Bank bankAccount = bankAccounts.get(accountNumber);
 			int deposit = 1;
-			int liftOff = 2;
+			int withdraw = 2;
 			
 			if(typeOfTransaction == deposit) {
 				bankAccount.deposit(amount);
 			}
-			else if(typeOfTransaction == liftOff) {
-				bankAccount.liftOff(amount);
+			else if(typeOfTransaction == withdraw) {
+				bankAccount.withdraw(amount);
 			}
 			else {
 				System.out.println("Invalid transaction type.");
