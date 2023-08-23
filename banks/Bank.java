@@ -87,7 +87,7 @@ public class Bank {
 		System.out.println("Deposit succesful! New balance: " + this.balance);
 	}
 	
-	public void liftOff(double amount) {
+	public void withdraw(double amount) {
 		if((this.balance + this.bankLimit) >= amount) {
 			this.balance -= amount;
 			System.out.println("Lift off succesful! New balance: " + this.balance);
